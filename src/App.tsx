@@ -8,6 +8,7 @@ import {
   Code,
   Grid,
   theme,
+  Container,
 } from "@chakra-ui/react"
 
 import { Logo } from "./Logo"
@@ -16,13 +17,19 @@ import Hero from './Hero'
 import Experience from './Experience'
 import { Interesses } from "./Interesse"
 import './global.css'
+
+
 export const App = () => (
+  
   <ChakraProvider theme={theme}>
     <Nav>
-    <Hero/>
-    <Experience/>
-
+    <Container centerContent maxW="container.xl">
+    <Hero/>  
+    <Experience />
     <Interesses/>
+    </Container>
+   
+
     
     <Box textAlign="center" fontSize="xl" id="ac">
       <Grid minH="100vh" p={3}>

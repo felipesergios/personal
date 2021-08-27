@@ -17,7 +17,7 @@ import {
     IoWifiSharp,
   } from 'react-icons/io5';
   import { ReactElement } from 'react';
-  
+  import Fade from 'react-reveal/Fade'
   interface FeatureProps {
     text: string;
     iconBg: string;
@@ -43,6 +43,7 @@ import {
   
   export default function SplitWithImage() {
     return (
+      <Fade right >
       <Container maxW={'5xl'} py={12} id="xp">
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <Stack spacing={4}>
@@ -101,5 +102,6 @@ import {
           </Flex>
         </SimpleGrid>
       </Container>
+      </Fade>
     );
   }
