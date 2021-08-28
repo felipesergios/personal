@@ -16,7 +16,9 @@ import Nav from './Sidebar'
 import Hero from './Hero'
 import Experience from './Experience'
 import { Interesses } from "./Interesse"
+
 import './global.css'
+import { Formacao } from "./formacao"
 
 
 export const App = () => (
@@ -27,6 +29,7 @@ export const App = () => (
     <Hero/>  
     <Experience />
     <Interesses/>
+    <Formacao/>
     </Container>
    
 
