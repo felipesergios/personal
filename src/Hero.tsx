@@ -7,17 +7,13 @@ import {
     Text,
     Button,
     Image,
-    Icon,
-    IconButton,
     createIcon,
-    IconProps,
-    useColorModeValue,
     Link,
   } from '@chakra-ui/react';
   import Fade from 'react-reveal/Fade';
   export default function CallToActionWithVideo() {
     return (
-      <Fade left >
+      <Fade left>
       <Container maxW={'5xl'} id="home">
         <Stack
           align={'center'}

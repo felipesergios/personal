@@ -17,7 +17,8 @@ import {
         <Box
           role={'group'}
           p={2}
-          maxW={'300px'}
+          maxW={'250px'}
+          
           w={'full'}
           bg={useColorModeValue('white', 'gray.800')}
           boxShadow={'md'}
@@ -33,12 +34,12 @@ import {
               transition: 'all .3s ease',
               content: '""',
               w: 'full',
-              h: 'full',
+              h: '60%',
               pos: 'absolute',
               top: 5,
               left: 0,
               backgroundImage: `url(${img})`,
-              filter: 'blur(2px)',
+              filter: 'blur(1px)',
               zIndex: -1,
             }}
             _groupHover={{
@@ -48,19 +49,20 @@ import {
             }}>
             <Image
               rounded={'lg'}
-              height={200}
+              height="70%"
               width={282}
               objectFit={'cover'}
               src={img}
             />
-          </Box>
-          <Stack pt={10} align={'center'}>
+             <Stack pt={2} align={'center'}>
             
-            <Heading fontSize={'2xl'} fontFamily={'arial'} fontWeight={500}>
+            <Heading  fontSize={'2xl'} fontFamily={'arial'} fontWeight={500}>
               {name}
             </Heading>
             
           </Stack>
+          </Box>
+         
         </Box>
       </Center>
     );
