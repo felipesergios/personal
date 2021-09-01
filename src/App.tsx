@@ -16,7 +16,9 @@ import Nav from './Sidebar'
 import Hero from './Hero'
 import Experience from './Experience'
 import { Interesses } from "./Interesse"
+
 import './global.css'
+import { Formacao } from "./formacao"
 
 
 export const App = () => (
@@ -27,6 +29,7 @@ export const App = () => (
     <Hero/>  
     <Experience />
     <Interesses/>
+    <Formacao/>
     </Container>
    
 
@@ -36,9 +39,9 @@ export const App = () => (
        
         
         <VStack spacing={8}>
-          <Logo h="40vmin" pointerEvents="none" />
+          <Logo h="10vmin" pointerEvents="none" />
           <Text>
-            Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
+            Feito com chakra UI<Code fontSize="xl">src/App.tsx</Code> and save to reload.
           </Text>
           <Link
             color="teal.500"

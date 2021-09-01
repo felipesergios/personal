@@ -119,6 +119,7 @@ const NavItem = ({ link , icon, children, ...rest }: NavItemProps) => {
         _hover={{
           bg: 'cyan.400',
           color: 'white',
+          
         }}
         {...rest}>
         {icon && (

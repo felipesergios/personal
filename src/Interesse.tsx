@@ -7,6 +7,28 @@ import {
 
 import Card from './Card'
 import LightSpeed from 'react-reveal/LightSpeed';
+import logo1 from "./img/docker.png"
+import logo2 from "./img/kubernetes.png"
+import logo3 from "./img/laravel.png"
+import logo4 from "./img/nodejs.png"
+import logo5 from './img/reactjs.jpeg'
+import logo6 from './img/expo.png'
+
+interface CardsItemProps {
+    name: string;
+    img:string;
+  }
+  const CardsItem: Array<CardsItemProps> = [
+    {name: 'Docker',img:logo1},
+    {name: 'Kubernetes',img:logo2},
+    {name:'Laravel',img:logo3},
+    {name:'NodeJS',img:logo4},
+    {name:'ReactJS',img:logo5},
+    {name:'ReactNative-Expo',img:logo6},
+  ];
+
+   
+
 
 export const Interesses = () => (
   <LightSpeed left>
@@ -14,29 +36,20 @@ export const Interesses = () => (
   lineHeight={1.1}
   fontWeight={600}
   fontSize="5xl"
+  pb={2}
   id="int">
-  Techs que curto 
+
+Algumas tecnologias que curto  
   
   </Heading>
-  <SimpleGrid columns={[2, null, 3]} spacing="1px" >
-  <Box  height="auto">
-      <Card img="https://images.ctfassets.net/23aumh6u8s0i/7gu8qd0qzmuxWWjYLhZpqo/2bb8a206fe4a86af9414545b5c25c368/laravel" name="Laravel"/>
-  </Box>
-  <Box  height="auto">
-      <Card/>
-  </Box>
-  <Box  height="auto">
-      <Card/>
-  </Box>
-  <Box  height="auto">
-      <Card/>
-  </Box>
-  <Box  height="auto">
-      <Card/>
-  </Box>
-  <Box  height="auto">
-      <Card/>
-  </Box>
+  <SimpleGrid columns={[2, null, 3]} spacing="5px" >
+
+  {CardsItem.map((data) => (
+    <Box  height="auto">
+       <Card name={data.name} img={data.img}/>
+   </Box>
+  ))}
+  
 </SimpleGrid>
 </LightSpeed>
 )
