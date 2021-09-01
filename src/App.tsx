@@ -41,7 +41,7 @@ export const App = () => (
         <VStack spacing={8}>
           <Logo h="10vmin" pointerEvents="none" />
           <Text>
-            Feito com chakra UI<Code fontSize="xl">src/App.tsx</Code> and save to reload.
+            Feito com chakra UI
           </Text>
           <Link
             color="teal.500"
