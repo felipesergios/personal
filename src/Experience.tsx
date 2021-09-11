@@ -60,7 +60,7 @@ import {
             </Text>
             <Heading>Minhas Experiências :)</Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-              Estes são os locais em que tive o prazer de colaborar e aprender bastante .  
+            Esses são os locais em que tive o prazer de colaborar e também aprender bastante.
             </Text>
             <Stack
               spacing={4}

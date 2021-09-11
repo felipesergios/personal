@@ -11,6 +11,7 @@ import {
     Link,
   } from '@chakra-ui/react';
   import Fade from 'react-reveal/Fade';
+  import logo from './img/HERO.jpg'
   export default function CallToActionWithVideo() {
     return (
       <Fade left>
@@ -46,11 +47,12 @@ import {
               </Text>
             </Heading>
             <Text color={'gray.500'}>
-              Me chamo felipe sergio , sou estudante do bacharelado em técnologia da informação
-              pela universidade federal do rio grande do norte , este site contem um pouco da minha
-              historia com a informatica.
-              Atualmente estou focado no aprendizado de técnlogias de backend , mas sempre aprendendo
-              algo novo .
+            Olá, me chamo Felipe Sergio.
+Estudo do bacharelado em Técnologia da Informação na UFRN 
+(Universidade Federal do Rio Grande Do Norte) e esse site 
+contém um pouco da minha historia com a informática. 
+Atualmente estou focado no aprendizado de técnlogias de 
+backend, mas sempre me interessando e aprendendo algo novo.
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
@@ -67,14 +69,7 @@ import {
                 Aprendizado
               </Button>
               </Link>
-              <Button
-                rounded={'full'}
-                size={'lg'}
-                fontWeight={'normal'}
-                px={6}
-                leftIcon={<PlayIcon h={4} w={4} color={'gray.300'} />}>
-                How It Works
-              </Button>
+              
             </Stack>
           </Stack>
           <Flex
@@ -98,9 +93,7 @@ import {
                 align={'center'}
                 w={'100%'}
                 h={'100%'}
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src={logo}
               />
             </Box>
           </Flex>

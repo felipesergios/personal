@@ -16,6 +16,7 @@ import Nav from './Sidebar'
 import Hero from './Hero'
 import Experience from './Experience'
 import { Interesses } from "./Interesse"
+import Aprendizado from './Aprendizado'
 
 import './global.css'
 import { Formacao } from "./formacao"
@@ -31,10 +32,9 @@ export const App = () => (
     <Interesses/>
     <Formacao/>
     </Container>
-   
+    <Aprendizado/>
 
-    
-    <Box textAlign="center" fontSize="xl" id="ac">
+    <Box textAlign="center" fontSize="xl" id="foo">
       <Grid minH="100vh" p={3}>
        
         
@@ -43,15 +43,8 @@ export const App = () => (
           <Text>
             Feito com chakra UI
           </Text>
-          <Link
-            color="teal.500"
-            href="https://chakra-ui.com"
-            fontSize="2xl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn Chakra
-          </Link>
+         
+          
         </VStack>
       </Grid>
     </Box>
