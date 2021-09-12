@@ -15,7 +15,7 @@ import './global.css'
 
 
 export const Formacao = () => (
-    <Container>
+    <>
 <Heading size="lg" fontSize="50px" id="form" mb={10}>
 <Flex>
   Minhas formações
@@ -23,7 +23,7 @@ export const Formacao = () => (
  
 </Flex>
 </Heading>
-  <Container maxW="container.lg" centerContent>
+  <Container maxW="container.lg">
 
      <List spacing={3} fontSize="2xl">
   <ListItem>
@@ -42,6 +42,6 @@ export const Formacao = () => (
   </ListItem>
 </List>
   </Container>
-  </Container>
+  </>
   
 )

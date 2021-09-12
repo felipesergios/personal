@@ -26,7 +26,7 @@ export const App = () => (
   
   <ChakraProvider theme={theme}>
     <Nav>
-    <Container centerContent maxW="container.xl">
+    <Container  maxW="container.xl">
     <Hero/>  
     <Experience />
     <Interesses/>

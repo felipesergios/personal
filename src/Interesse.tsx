@@ -32,17 +32,12 @@ interface CardsItemProps {
 
 export const Interesses = () => (
   <LightSpeed left>
-  <Heading    
-  lineHeight={1.1}
-  fontWeight={600}
-  fontSize="5xl"
-  pb={2}
-  id="int">
+  <Heading  ml={3} id="int" lineHeight={1.05} mt={'2rem'} mb={'2.5rem'}>
 
 Algumas tecnologias que curto  
   
   </Heading>
-  <SimpleGrid columns={[2, null, 3]} spacing="5px" >
+  <SimpleGrid columns={[2, null, 4]} spacing="15px" >
 
   {CardsItem.map((data) => (
     <Box  height="auto">
