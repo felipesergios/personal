@@ -13,6 +13,8 @@ import logo3 from "./img/laravel.png"
 import logo4 from "./img/nodejs.png"
 import logo5 from './img/reactjs.jpeg'
 import logo6 from './img/expo.png'
+import logo7 from './img/mysql.png'
+import logo8 from './img/shell.jpg'
 
 interface CardsItemProps {
     name: string;
@@ -25,6 +27,8 @@ interface CardsItemProps {
     {name:'NodeJS',img:logo4},
     {name:'ReactJS',img:logo5},
     {name:'ReactNative-Expo',img:logo6},
+    {name:'MariaDB',img:logo7},
+    {name:'Shell-Script',img:logo8},
   ];
 
    

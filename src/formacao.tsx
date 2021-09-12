@@ -27,17 +27,17 @@ export const Formacao = () => (
 
      <List spacing={3} fontSize="2xl">
   <ListItem>
-    <ListIcon as={MdTimelapse} color="green.500" />
+    <ListIcon as={MdTimelapse} color="white.500" />
     Graduando em Técnologia da Informação UFRN/IMD
   </ListItem>
   
   <ListItem>
-    <ListIcon as={MdNetworkCheck} color="green.500" />
+    <ListIcon as={MdNetworkCheck} color="white.500" />
     Técnico em Redes de computadores - UFRN/IMD
   </ListItem>
   {/* You can also use custom icons from react-icons */}
   <ListItem>
-    <ListIcon as={MdComputer} color="green.500" />
+    <ListIcon as={MdComputer} color="white.500" />
     Técnico em manutenção e suporte de micro - CENEP
   </ListItem>
 </List>
