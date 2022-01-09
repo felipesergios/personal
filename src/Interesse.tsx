@@ -21,15 +21,18 @@ interface CardsItemProps {
     img:string;
   }
   const CardsItem: Array<CardsItemProps> = [
-    {name: 'Docker',img:logo1},
-    {name: 'Kubernetes',img:logo2},
-    {name:'Laravel',img:logo3},
-    {name:'NodeJS',img:logo4},
-    {name:'ReactJS',img:logo5},
-    {name:'ReactNative-Expo',img:logo6},
+    {name: 'Laravel',img:logo3},
+    {name: 'NodeJS',img:logo4},
     {name:'MariaDB',img:logo7},
     {name:'Shell-Script',img:logo8},
+    {name:'ReactJS',img:logo5},
+    {name:'ReactNative-Expo',img:logo6},
+    {name:'Docker',img:logo1},
+    {name:'Kubernetes',img:logo2},
   ];
+
+
+  
 
    
 
@@ -38,7 +41,7 @@ export const Interesses = () => (
   <LightSpeed left>
   <Heading  ml={3} id="int" lineHeight={1.05} mt={'2rem'} mb={'2.5rem'}>
 
-Algumas tecnologias que curto  
+  Tecnologias que estou estudando
   
   </Heading>
   <SimpleGrid columns={[2, null, 4]} spacing="15px" >

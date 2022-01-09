@@ -16,6 +16,7 @@ import {
     IoSearchSharp,
     IoWifiSharp,
   } from 'react-icons/io5';
+  import logo_perfil from './img/perfil.jpg'
   import { ReactElement } from 'react';
   import Fade from 'react-reveal/Fade'
   interface FeatureProps {
@@ -23,8 +24,10 @@ import {
     iconBg: string;
     icon?: ReactElement;
   }
+ 
   
   const Feature = ({ text, icon, iconBg }: FeatureProps) => {
+    
     return (
       <Stack direction={'row'} align={'center'}>
         <Flex
@@ -46,6 +49,14 @@ import {
       <Fade right >
       <Container maxW={'5xl'} py={12} id="xp">
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+        <Flex>
+            <Image
+              rounded={'md'}
+              alt={'feature image'}
+              src="https://source.unsplash.com/random/featured/?programing"
+              objectFit={'cover'}
+            />
+          </Flex>
           <Stack spacing={4}>
             <Text
               textTransform={'uppercase'}
@@ -74,32 +85,26 @@ import {
                   <Icon as={IoWifiSharp} color={'yellow.500'} w={5} h={5} />
                 }
                 iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                text={'Subcoordenador de redes - Governo RN'}
+                text={'Governo do Rio Grande do Norte '}
               />
+              <Text>Sysadmin,Gestão de Datacenter,Eng.Devops,Atendimento e suporte</Text>
               <Feature
                 icon={<Icon as={IoPerson} color={'green.500'} w={5} h={5} />}
                 iconBg={useColorModeValue('green.100', 'green.900')}
-                text={'Estagiario SEMURB - PREFEITURA DO NATAL RN'}
+                text={'PREFEITURA DO NATAL RN (Sec de Meio Ambiente e Urbanismo)'}
               />
+               <Text>Desenvolvedor PHP e Sysadmin</Text>
               <Feature
                 icon={
                   <Icon as={IoPerson} color={'purple.500'} w={5} h={5} />
                 }
                 iconBg={useColorModeValue('purple.100', 'purple.900')}
-                text={'Estagiario SMS - PREFEITURA DO NATAL RN'}
+                text={'PREFEITURA DO NATAL RN (Sec Municipal de Saúde)'}
               />
+              <Text>Manutenção de micro,Suporte N1 - N2,Configuração e montagem de redes(pequeno e médio porte).</Text>
             </Stack>
           </Stack>
-          <Flex>
-            <Image
-              rounded={'md'}
-              alt={'feature image'}
-              src={
-                'https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-              }
-              objectFit={'cover'}
-            />
-          </Flex>
+          
         </SimpleGrid>
       </Container>
       </Fade>

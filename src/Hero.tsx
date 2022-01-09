@@ -57,18 +57,7 @@ backend, mas sempre me interessando e aprendendo algo novo.
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
-              <Link href="#ac" style={{ textDecoration: 'none'}}>
-              <Button
-                rounded={'full'}
-                size={'lg'}
-                fontWeight={'normal'}
-                px={6}
-                colorScheme={'blue'}
-                bg={'blue.100'}
-                _hover={{ bg: 'blue.400' }}>
-                Aprendizado
-              </Button>
-              </Link>
+              
               
             </Stack>
           </Stack>
@@ -93,7 +82,7 @@ backend, mas sempre me interessando e aprendendo algo novo.
                 align={'center'}
                 w={'100%'}
                 h={'100%'}
-                src={logo}
+                src="https://source.unsplash.com/random/featured/?developer"
               />
             </Box>
           </Flex>
