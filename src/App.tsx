@@ -34,21 +34,17 @@ export const App = () => (
     </Container>
     <Aprendizado/>
 
-    <Box textAlign="center" fontSize="xl" id="foo">
-      <Grid minH="100vh" p={3}>
-       
-        
-        <VStack spacing={8}>
-          <Logo h="10vmin" pointerEvents="none" />
-          <Text>
-            Feito com chakra UI
-          </Text>
-         
-          
-        </VStack>
-      </Grid>
+   
+    <Box textAlign="center" fontSize="lg" id="foo">
+    <Grid minH="20vh" p={3}>
+    <VStack spacing={8}>
+         <Logo h="10vmin" pointerEvents="none" />
+         <Text>
+           Feito com chakra UI
+         </Text>
+       </VStack>
+     </Grid>
     </Box>
-
     
     </Nav>
   </ChakraProvider>

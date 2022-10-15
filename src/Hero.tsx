@@ -47,11 +47,11 @@ import {
               </Text>
             </Heading>
             <Text color={'gray.500'}>
-            Olá, me chamo Felipe Sergio.
-Estudo do bacharelado em Técnologia da Informação na UFRN 
-(Universidade Federal do Rio Grande Do Norte) e esse site 
-contém um pouco da minha historia com a informática. 
-Atualmente estou focado no aprendizado de técnlogias de 
+            Olá, me chamo felipe sergio.<br/>
+Estudante do <strong>Bacharelado em Tecnologia da Informação na UFRN </strong>
+(Universidade Federal do Rio Grande Do Norte) esse site 
+contém um pouco da minha história com a informática. <br/>
+Atualmente estou focado no aprendizado de tecnlogias de 
 backend, mas sempre me interessando e aprendendo algo novo.
             </Text>
             <Stack
