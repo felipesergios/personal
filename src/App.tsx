@@ -30,17 +30,16 @@ export const App = () => (
     <Hero/>  
     <Experience />
     <Interesses/>
-    <Formacao/>
     </Container>
     <Aprendizado/>
 
    
     <Box textAlign="center" fontSize="lg" id="foo">
-    <Grid minH="20vh" p={3}>
+    <Grid minH="10vh" p={3}>
     <VStack spacing={8}>
-         <Logo h="10vmin" pointerEvents="none" />
+         <Logo h="5vmin" pointerEvents="none" />
          <Text>
-           Feito com chakra UI
+         Made with chakra UI
          </Text>
        </VStack>
      </Grid>

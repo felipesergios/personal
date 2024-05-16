@@ -34,10 +34,9 @@ interface LinkItemProps {
 }
 const LinkItems: Array<LinkItemProps> = [
   { name: 'Home', icon: FiHome ,link:'home'},
-  { name: 'Experiências', icon: FiCodepen ,link:'xp'},
-  { name: 'Interesses', icon: FiHeart , link:'int' },
-  { name: 'Formações', icon: FiAward ,link:'form'},
-  { name: 'Aprendizado continuo', icon: FiTrendingUp ,link:'ac'},
+  { name: 'Experiences', icon: FiCodepen ,link:'xp'},
+  { name: 'Interests', icon: FiHeart , link:'int' },
+  { name: 'Continuous learning', icon: FiTrendingUp ,link:'ac'},
 ];
 
 export default function SimpleSidebar({ children }: { children: ReactNode }) {

@@ -15,6 +15,8 @@ import {
     IoLogoBitcoin,
     IoSearchSharp,
     IoWifiSharp,
+    IoMailOpen,
+    IoCodeSlash,
   } from 'react-icons/io5';
   import logo_perfil from './img/perfil.jpg'
   import { ReactElement } from 'react';
@@ -69,9 +71,9 @@ import {
               rounded={'md'}>
               XP
             </Text>
-            <Heading>Minhas Experiências :)</Heading>
+            <Heading>My Solid Experiences</Heading>
             <Text color={'gray.500'} fontSize={'md'}>
-            Esses são os locais em que tive o prazer de colaborar e também aprender bastante.
+            These are the technologies I had the most contact with during my journey with IT
             </Text>
             <Stack
               spacing={4}
@@ -85,23 +87,23 @@ import {
                   <Icon as={IoWifiSharp} color={'yellow.500'} w={5} h={5} />
                 }
                 iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                text={'Governo do Rio Grande do Norte '}
+                text={'Linux | HCI | Debian'}
               />
-              <Text>Sysadmin(Linux),Gestão de Datacenter,Devops,Atendimento e suporte</Text>
+              
               <Feature
-                icon={<Icon as={IoPerson} color={'green.500'} w={5} h={5} />}
-                iconBg={useColorModeValue('green.100', 'green.900')}
-                text={'PREFEITURA DO NATAL RN (Sec de Meio Ambiente e Urbanismo)'}
+                icon={<Icon as={IoPerson} color={'black.500'} w={5} h={5} />}
+                iconBg={useColorModeValue('red.100', 'red.900')}
+                text={'Zabbix | Network Analysis'}
               />
-               <Text>Desenvolvedor PHP(Laravel) e Sysadmin(Linux)</Text>
+              
               <Feature
                 icon={
-                  <Icon as={IoPerson} color={'purple.500'} w={5} h={5} />
+                  <Icon as={IoCodeSlash} color={'purple.500'} w={5} h={5} />
                 }
                 iconBg={useColorModeValue('purple.100', 'purple.900')}
-                text={'PREFEITURA DO NATAL RN (Sec Municipal de Saúde)'}
+                text={'Automations with ansible and python'}
               />
-              <Text>Manutenção de micro,Suporte N1 - N2, Configuração e montagem de redes (pequeno e médio porte).</Text>
+             
             </Stack>
           </Stack>
           

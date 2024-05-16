@@ -39,11 +39,12 @@ export default function Aprendizado() {
                 bg: 'none',
                 zIndex: -1,
               }}>
-              Vamos ao
+             Let's go to
+
             </Text>
             <br />
             <Text as={'span'} color={'blue.400'}>
-            Próximo Nível?
+            Next level?
             </Text>
           </Heading>
           <Text color={'gray.500'}>

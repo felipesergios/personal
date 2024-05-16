@@ -5,14 +5,51 @@ import {
     Box,
     Heading,
     Text,
-    Button,
     Image,
     createIcon,
-    Link,
+    Center,
   } from '@chakra-ui/react';
   import Fade from 'react-reveal/Fade';
   import logo from './img/HERO.jpg'
+
+
+  import api from './services/api';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
+
+
+interface gitUserContent {
+  name :String;
+  bio: String;
+}
+
+interface gitLanding{
+  Banner : String;
+}
+
+
+
+
   export default function CallToActionWithVideo() {
+
+    const [dataGit,setDataGit]=useState<gitUserContent>()
+    const [banner,setBanner]=useState<string>()
+    async function loadGitData(){
+      const res = await api.get("users/felipesergios")
+      const response = await axios.get("https://raw.githubusercontent.com/felipesergios/felipesergios/main/README.md");
+      setBanner(response.data)
+      setDataGit(res.data)
+      //console.log(res.data)
+      console.log(banner)
+
+    }
+  
+    useEffect(()=>{
+      loadGitData()
+    },[])
+
+
     return (
       <Fade left>
       <Container maxW={'5xl'} id="home">
@@ -26,33 +63,18 @@ import {
               lineHeight={1.1}
               fontWeight={600}
               fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
-              <Text
-                as={'span'}
-                position={'relative'}
-                _after={{
-                  content: "''",
-                  width: 'full',
-                  height: '30%',
-                  position: 'absolute',
-                  bottom: 1,
-                  left: 0,
-                  bg: 'none',
-                  zIndex: -1,
-                }}>
-                Bem vindo,
-              </Text>
-              <br />
+              <Center  
+                >
+                {dataGit?.name}
+              </Center>
+              <br></br>
               <Text as={'span'} color={'blue.400'}>
-                fique a vontade!
+               {dataGit?.bio}
               </Text>
             </Heading>
+           
             <Text color={'gray.500'}>
-            Olá, me chamo felipe sergio.<br/>
-Estudante do <strong>Bacharelado em Tecnologia da Informação na UFRN </strong>
-(Universidade Federal do Rio Grande Do Norte) esse site 
-contém um pouco da minha história com a informática. <br/>
-Atualmente estou focado no aprendizado de tecnlogias de 
-backend, mas sempre me interessando e aprendendo algo novo.
+            <div dangerouslySetInnerHTML={{ __html: banner }} />
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
@@ -61,31 +83,7 @@ backend, mas sempre me interessando e aprendendo algo novo.
               
             </Stack>
           </Stack>
-          <Flex
-            flex={1}
-            justify={'center'}
-            align={'center'}
-            position={'relative'}
-            w={'full'}>
-            
-            <Box
-              position={'relative'}
-              height={'300px'}
-              rounded={'2xl'}
-              boxShadow={'2xl'}
-              width={'full'}
-              overflow={'hidden'}>
-             
-              <Image
-                alt={'Hero Image'}
-                fit={'cover'}
-                align={'center'}
-                w={'100%'}
-                h={'100%'}
-                src="https://source.unsplash.com/random/featured/?developer"
-              />
-            </Box>
-          </Flex>
+          
         </Stack>
       </Container>
       </Fade>
