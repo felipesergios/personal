@@ -18,7 +18,7 @@ interface CardsItemProps {
   const CardsItem: Array<CardsItemProps> = [
     {name: 'Laravel',img:"https://skillicons.dev/icons?i=laravel"},
     {name: 'AWS',img:"https://skillicons.dev/icons?i=aws"},
-    {name:'MariaDB',img:"https://skillicons.dev/icons?i=mariadb"},
+    {name:'Redhat',img:"https://skillicons.dev/icons?i=redhat"},
     {name:'Shell',img:"https://skillicons.dev/icons?i=bash"},
     {name:'ReactJS',img:"https://skillicons.dev/icons?i=react"},
     {name:'nginx',img:"https://skillicons.dev/icons?i=nginx"},

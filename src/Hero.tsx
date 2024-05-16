@@ -40,9 +40,6 @@ interface gitLanding{
       const response = await axios.get("https://raw.githubusercontent.com/felipesergios/felipesergios/main/README.md");
       setBanner(response.data)
       setDataGit(res.data)
-      //console.log(res.data)
-      console.log(banner)
-
     }
   
     useEffect(()=>{
